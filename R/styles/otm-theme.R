@@ -2,7 +2,7 @@
 # Define an OTM ggplot style
 ################################################################################
 
-otm_logo <- readPNG("otm_logo.png")
+# otm_logo <- readPNG("otm_logo.png")
 
 theme_otm <- function(legend_show = FALSE, subtitle = FALSE) { 
   font <- "Peclet"   
