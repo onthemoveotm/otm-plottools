@@ -20,7 +20,6 @@ theme_otm <- function(legend_show = FALSE, subtitle = FALSE) {
     title_spacing <- 15
   }
   
-  
   theme_minimal() %+replace%    # work from minimal as base
     
     theme(
