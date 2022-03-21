@@ -40,8 +40,7 @@ otm_colors <- function(...){
 # Colour Palettes
 otm_palettes <- list(
   `main` = otm_colors("blue", "red", "green", "yellow", "cyan", "purple", "grey"),
-  `vibrant` = otm_colors("v-blue", "v-orange", "v-teal", "v-cyan", "v-magenta", "v-red", "grey"),
-  `iportunus` = otm_colors("ip-blue", "ip-red", "ip-yellow", "ip-green", "ip-pink")
+  `vibrant` = otm_colors("v-blue", "v-orange", "v-teal", "v-cyan", "v-magenta", "v-red", "grey")
 )
 
 
