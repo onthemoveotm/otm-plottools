@@ -6,7 +6,7 @@
 
 theme_otm <- function(legend_show = FALSE, subtitle = FALSE) { 
   font <- "Peclet"   
-  label_color <- otm_colors("teal")
+  label_color <- otm_colors("darkgrey")
   
   if(legend_show == TRUE){
     legend_position <- "right"
@@ -23,7 +23,7 @@ theme_otm <- function(legend_show = FALSE, subtitle = FALSE) {
   theme_minimal() %+replace%    # work from minimal as base
     
     theme(
-      axis.line.x = element_line(size = .5),
+      # axis.line.x = element_line(size = .5),
       # axis.line.y = element_line(size = .5),
       panel.grid.major.x = element_blank(),
       panel.grid.minor = element_blank(),  
@@ -32,7 +32,7 @@ theme_otm <- function(legend_show = FALSE, subtitle = FALSE) {
       #text elements
       plot.title = element_text(
         family = font,
-        size = 16,
+        size = 14,
         face = 'bold',
         hjust = 0,
         vjust = 2,
@@ -52,7 +52,7 @@ theme_otm <- function(legend_show = FALSE, subtitle = FALSE) {
         size = 9,
         hjust = 0,
         margin=margin(7,0,0,0)),
-      
+    
       plot.caption.position = "plot",
       
       axis.title = element_text(
@@ -62,13 +62,22 @@ theme_otm <- function(legend_show = FALSE, subtitle = FALSE) {
       
       axis.text = element_text(
         family = font,
-        size = 9),
+        size = 9,
+        color = label_color),
       
-      axis.text.x = element_text(
-        margin=margin(5, b = 10)),
+      axis.text.x = element_blank(),
       
       # Legend
       legend.position = legend_position,
       
+      legend.title = element_text(
+        family = font,
+        size = 9,
+        color = label_color),
+      
+      legend.text = element_text(
+        family = font,
+        size = 9,
+        color = label_color)
     )
 }

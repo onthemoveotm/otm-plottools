@@ -4,11 +4,12 @@
 
 otm_color_hexes <- c(
   black = "#000000",
+  darkgrey = "#485156",
   white = "#FFFFFF",
-  blue = "#4477AA",
+  blue = "#6699CC",
   red = "#EE6677",
   green = "#228833",
-  yellow = "#CCBB44",
+  yellow = "#AAAA00",
   cyan = "#66CCEE",
   purple = "#AA3377",
   grey = "#BBBBBB",
@@ -39,7 +40,7 @@ otm_colors <- function(...){
 
 # Colour Palettes
 otm_palettes <- list(
-  `main` = otm_colors("blue", "red", "green", "yellow", "cyan", "purple", "grey"),
+  `main` = otm_colors("blue", "yellow", "purple", "green", "cyan", "red", "grey"),
   `vibrant` = otm_colors("v-blue", "v-orange", "v-teal", "v-cyan", "v-magenta", "v-red", "grey")
 )
 
